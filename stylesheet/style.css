@@ -1,0 +1,81 @@
+body{
+	background-color: #efe5ae;
+}
+
+h1{
+	font-size: 50px;
+	text-align: center;
+	color: #276577;
+	font-family: verdana;
+	position: relative;
+	top: 70px;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: absolute;
+	left: 6%;
+	top: 35%;
+}
+
+.container > div{
+	background-color: #b793d8;
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	border-radius: 50%;
+	position: relative;
+	transition: all 1s;
+}
+
+@keyframes move1{
+	0%{bottom:0px;}
+	25%{bottom:30px;}
+	50%{bottom:0px;}
+	75%{bottom: -30px;}
+	100%{bottom: 0px;}
+}
+
+@keyframes move2{
+	0%{bottom:0px;}
+	25%{bottom:-30px;}
+	50%{bottom:0px;}
+	75%{bottom: 30px;}
+	100%{bottom: 0px;}
+}
+
+.move1{
+	animation-name: move1;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+.move2{
+	animation-name: move2;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+#one:hover{
+	background-color: #d87da8;
+}
+
+#two:hover{
+	background-color: #d87450;
+}
+
+#three:hover{
+	background-color: #6bba72;
+}
+
+#four:hover{
+	background-image: url("../images/jumpscare.png");
+	background-position: center; 
+	transition: 0s;
+}
+
+#five:hover{
+	background-color: #714284;
+}
